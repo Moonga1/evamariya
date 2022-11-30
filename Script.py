@@ -5,13 +5,13 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """🍃 му иαмє :<a href=https://t.me/Eva_maria_bot> °•°✮мяѕ єνα❥‌⃟⃝🥀</a>
+    ABOUT_TXT = """<b>🍃 му иαмє :<a href=https://t.me/Eva_maria_bot> °•°✮мяѕ єνα❥‌⃟⃝🥀</a>
 🍃 ¢яєαтσя : <a href=https://t.me/Sachusachuz> 🖤⃝ѕαϲнυ🖤⃝ ѕαϲнυz࿐</a>
 🍃 ℓαиgυαgє : ρутнσи
 🍃 ℓιвяαяу : ρуяσgяαм
 🍃 ѕєяνєя : κογєϐ
 🍃 ∂αтα вαѕє : мσиgσ ∂в
-🍃 вυιℓ∂ ѕтαтυѕ : ν10.0 [ɞeṭa]"""
+🍃 вυιℓ∂ ѕтαтυѕ : ν10.0 [ɞeṭa]</b>"""
 
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
