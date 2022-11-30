@@ -13,11 +13,12 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 🍃 ∂αтα вαѕє : мσиgσ ∂в
 🍃 вυιℓ∂ ѕтαтυѕ : ν10.0 [ɞeṭa]</b>"""
 
-    SOURCE_TXT = """<b>ɴᴏᴛᴇ:
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-- ꜱᴏᴜʀᴄᴇ - <a href="https://github.com/Joelkb/DQ-The-File-Donor">ʜᴇʀᴇ</a>
-Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/creatorbeatz">Jᴏᴇʟ ᠰ TɢX</a></b>"""
+    SOURCE_TXT = """<b>അയ്യേ... പറ്റിച്ചേ... 😹
+
+എന്തായാലും വന്നതല്ലേ. ഇവിടെ കാണുന്ന 🅖︎🅡︎🅞︎🅤︎🅟︎ ൽ 🅙︎🅞︎🅘︎🅝︎ ചെയ്തേക്ക് 😎💯
+
+<a href=https://t.me/CinemaXpressTM>𝐂ɪɴᴇᴍᴀ𝐗ᴘʀᴇ𝐬𝐬𝐓𝐌</a></b>"""
+
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -177,17 +178,15 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+<b><code>{file_name}</code></b>
 
-<b>
-╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
+<b>╭─────── • ◆ • ───────╮
+📮ᴊᴏɪɴ : <a href=https://t.me/CxMain>ᴄʜᴀɴɴᴇʟ</a>
+🔖ᴍᴏᴠɪᴇs : <a href=https://t.me/cinemaxpressTM>ɢʀᴏᴜᴘ</a>
+🖤Dᴀʀᴋ Mᴏᴅᴇ : <a href=https://t.me/addtheme/MinimalWolf>Tᴏᴜᴄʜ</a>
 ╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
-=========== • ✠ • ===========</b>"""
+  ♡ ㅤ   ❍ㅤ     ⎙      ⌲
+  ˡᶦᵏᵉ  ᶜᵒᵐᵐᵉⁿᵗ   ˢᵃᵛᵉ   ˢʰᵃʳᵉ</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
