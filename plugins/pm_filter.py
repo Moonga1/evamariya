@@ -784,6 +784,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAEGn6VjhzPwXApwyM659UV-IwHPDVwKdgACmgQAAtXKKFYWg12OyIQQFysE")
+        await asyncio.sleep(2)
+        await m.delete()
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
