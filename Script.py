@@ -178,7 +178,7 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b><code>{file_name}</code></b>
+<b>File Name : <code>{file_name}</code></b>
 
 <b>╭─────── • ◆ • ───────╮
 📮ᴊᴏɪɴ : <a href=https://t.me/CxMain>ᴄʜᴀɴɴᴇʟ</a>
