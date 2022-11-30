@@ -58,7 +58,7 @@ async def start(client, message):
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker(get.SHAZ)
+        m=await message.reply_sticker(sticker=get.(SHAZ))
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -110,7 +110,7 @@ async def start(client, message):
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker(get.SHAZ)
+        m=await message.reply_sticker(sticker=get.(SHAZ))
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
