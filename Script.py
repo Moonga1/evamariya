@@ -179,9 +179,7 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """
 
-<b>➤ Fɪʟᴇ ɴᴀᴍᴇ 📂 :</b><b>{file_name}</b>
-
-<b>➤ Sɪᴢᴇ 👀 :</b><b>{file_size}</b>
+<b>➤{file_name}</b>
 
 <b>╭─────── • ◆ • ───────╮
 📮ᴊᴏɪɴ : <a href=https://t.me/CxMain>ᴄʜᴀɴɴᴇʟ</a>
