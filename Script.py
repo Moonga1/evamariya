@@ -178,15 +178,24 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>File Name : <code>{file_name}</code></b>
 
-<b>╭─────── • ◆ • ───────╮
-📮ᴊᴏɪɴ : <a href=https://t.me/CxMain>ᴄʜᴀɴɴᴇʟ</a>
-🔖ᴍᴏᴠɪᴇs : <a href=https://t.me/cinemaxpressTM>ɢʀᴏᴜᴘ</a>
-🖤Dᴀʀᴋ Mᴏᴅᴇ : <a href=https://t.me/addtheme/MinimalWolf>Tᴏᴜᴄʜ</a>
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+
+<b>
+
+╭─────── • ◆ • ───────╮
+
+🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
+
 ╰─────── • ◆ • ───────╯
-  ♡ ㅤ   ❍ㅤ     ⎙      ⌲
-  ˡᶦᵏᵉ  ᶜᵒᵐᵐᵉⁿᵗ   ˢᵃᵛᵉ   ˢʰᵃʳᵉ</b>"""
+
+=========== • ✠ • ===========
+
+▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Updates
+
+▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
+
+=========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
