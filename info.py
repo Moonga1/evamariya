@@ -23,7 +23,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 SHAZ = environ.get("SHAZ", "CAACAgIAAxkBAAEGp3ljijgb68i5JMH-OAmAo7dSb58VCQACZBgAAvG1EEmY4_NunlJkaysE")
 PICS = (environ.get('PICS', 'https://telegra.ph/file/2f523c061964b3a300c89.jpg https://telegra.ph/file/fb073400b79a64650ed56.jpg https://telegra.ph/file/64ae34a955d4e76915ec8.jpg https://telegra.ph/file/25b09eaed2405a5612094.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/6ecbfefc3f853b38ec016.jpg")
+NOR_IMG = environ.get("NOR_IMG", "CAACAgUAAxkBAAEGp4tjij0rPZPdX-1D98efG6Mxemz4YgACeQMAAjLBKFa95Zzjk1iG2CsE")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
