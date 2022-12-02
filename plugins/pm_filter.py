@@ -114,7 +114,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♨️ɪɴꜰᴏ♨️', 'reqinfo'),
+                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
                     InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
                     InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
                 ]
@@ -135,7 +135,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♨️ɪɴꜰᴏ♨️', 'reqinfo'),
+                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
                     InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
                     InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
                 ]
@@ -170,7 +170,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("🔰{search}🔰", url=f"https://t.me/CxMain")
+        InlineKeyboardButton(f' 🔰 {search} 🔰 ', 'qinfo')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1182,7 +1182,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♨️ɪɴꜰᴏ♨️', 'reqinfo'),
+                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
                     InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
                     InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
                 ]
@@ -1203,7 +1203,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'♨️ɪɴꜰᴏ♨️', 'reqinfo'),
+                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
                     InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
                     InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
                 ]
@@ -1218,7 +1218,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🔰{search}🔰", url=f"https://t.me/CxMain")
+        InlineKeyboardButton(f' 🔰 {search} 🔰 ', 'qinfo')
     ])
 
     if offset != "":
