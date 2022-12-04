@@ -92,7 +92,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)} 🔹 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📁{get_size(file.file_size)} ▪️ {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -114,17 +114,17 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
                 
@@ -135,17 +135,17 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
 
@@ -157,20 +157,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🟣 Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
+            [InlineKeyboardButton("🔺 ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton("🟡 Pᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton("♦️ ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("🟣 Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("🔺 ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("🟢 Nᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("🔻 ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton(f' 🔰 {search} 🔰 ', 'qinfo')
+        InlineKeyboardButton(f' ✨ {search} ✨ ', 'qinfo')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1158,7 +1158,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)} 🔹 {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁{get_size(file.file_size)} ▪️ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1182,17 +1182,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
                 
@@ -1203,22 +1203,22 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'💠ɪɴꜰᴏ💠', 'reqinfo'),
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🎥ᴍᴏᴠɪᴇ🎥', 'minfo'),
-                    InlineKeyboardButton(f'📟ꜱᴇʀɪᴇꜱ📟', 'sinfo')
+                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
+                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
                 ]
             )
 
     btn.insert(0, [
-        InlineKeyboardButton(f' 🔰 {search} 🔰 ', 'qinfo')
+        InlineKeyboardButton(f' ✨ {search} ✨ ', 'qinfo')
     ])
 
     if offset != "":
@@ -1226,11 +1226,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton("🟡 Pᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton("♦️ ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="♓ 𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 ♓",callback_data="pages")]
+            [InlineKeyboardButton(text="❄️ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ ❄️",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1301,7 +1301,9 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await hmm.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
+
+🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
@@ -1311,7 +1313,9 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await hmm.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
+
+🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
@@ -1324,7 +1328,9 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await fek.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
+
+🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
@@ -1334,7 +1340,9 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await fek.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
+
+🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
@@ -1346,7 +1354,9 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    await fuk.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
+
+🔍Search Again !!</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
@@ -1356,7 +1366,9 @@ async def auto_filter(client, msg, spoll=False):
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    await fuk.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
+
+🔍Search Again !!</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
