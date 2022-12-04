@@ -44,7 +44,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴 𝙱𝚄𝚃𝚃𝙾𝙽𝚂', callback_data='start')
+                    InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', callback_data='start')
+                 ]] 𝙽𝚂', callback_data='start')
                  ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgIAAxkBAAEGrmxjjNyUm6AUgsjrwt4EcpvlY3pMzwACZBgAAvG1EEmY4_NunlJkaysE")
