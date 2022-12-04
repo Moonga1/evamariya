@@ -1277,6 +1277,8 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
+                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await asyncio.sleep(10)
                         await hehe.delete()
                         await message.delete()
                 except KeyError:
@@ -1285,6 +1287,8 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
+                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await asyncio.sleep(10)
                         await hehe.delete()
                         await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -1297,6 +1301,8 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
+                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
                 except KeyError:
@@ -1305,6 +1311,8 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
+                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
         except Exception as e:
@@ -1316,6 +1324,8 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
+                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
                 except KeyError:
@@ -1324,6 +1334,8 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
+                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
     else:
@@ -1334,6 +1346,8 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
+                    await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                    await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
             except KeyError:
@@ -1342,6 +1356,8 @@ async def auto_filter(client, msg, spoll=False):
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
+                    await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                    await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
     if spoll:
@@ -1396,6 +1412,7 @@ async def advantage_spell_chok(client, msg):
         k = await msg.reply(script.I_CUD_NT.format(RQST))
         await asyncio.sleep(8)
         await k.delete()
+        await msg.delete()
         return
     SPELL_CHECK[msg.id] = movielist
     btn = [[
