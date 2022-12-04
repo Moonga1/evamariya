@@ -1277,7 +1277,7 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await hehe.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await hehe.delete()
                         await message.delete()
@@ -1287,7 +1287,7 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await hehe.edit_caption("<b>Your Filter has been closed and will delete in 10 seconds.</b>")
+                        await hehe.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await hehe.delete()
                         await message.delete()
@@ -1301,9 +1301,7 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
-
-🔍Search Again !!</b>")
+                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
@@ -1313,9 +1311,7 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
-
-🔍Search Again !!</b>")
+                        await hmm.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await hmm.delete()
                         await message.delete()
@@ -1328,9 +1324,7 @@ async def auto_filter(client, msg, spoll=False):
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
-
-🔍Search Again !!</b>")
+                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
@@ -1340,9 +1334,7 @@ async def auto_filter(client, msg, spoll=False):
                     settings = await get_settings(message.chat.id)
                     if settings['auto_delete']:
                         await asyncio.sleep(60)
-                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
-
-🔍Search Again !!</b>")
+                        await fek.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                         await asyncio.sleep(10)
                         await fek.delete()
                         await message.delete()
@@ -1354,9 +1346,7 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
-
-🔍Search Again !!</b>")
+                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
@@ -1366,9 +1356,7 @@ async def auto_filter(client, msg, spoll=False):
                 settings = await get_settings(message.chat.id)
                 if settings['auto_delete']:
                     await asyncio.sleep(60)
-                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 
-
-🔍Search Again !!</b>")
+                    await fuk.edit_caption("<b>🗑️ Filter Deleted After 1 Min ‼️ 🔍Search Again !!</b>")
                     await asyncio.sleep(10)
                     await fuk.delete()
                     await message.delete()
