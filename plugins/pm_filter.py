@@ -1398,6 +1398,7 @@ async def advantage_spell_chok(client, msg):
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply(script.I_CUDNT.format(RQST))
         await asyncio.sleep(8)
+        await msg.message.reply_to_message.delete()
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -1428,6 +1429,7 @@ async def advantage_spell_chok(client, msg):
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply(script.I_CUD_NT.format(RQST))
         await asyncio.sleep(8)
+        await msg.message.reply_to_message.delete()
         await k.delete()
         await msg.delete()
         return
@@ -1447,6 +1449,7 @@ async def advantage_spell_chok(client, msg):
     try:
         if settings['auto_delete']:
             await asyncio.sleep(60)
+            await msg.message.reply_to_message.delete()
             await spell_check_del.delete()
     except KeyError:
             grpid = await active_connection(str(message.from_user.id))
@@ -1454,6 +1457,7 @@ async def advantage_spell_chok(client, msg):
             settings = await get_settings(message.chat.id)
             if settings['auto_delete']:
                 await asyncio.sleep(60)
+                await msg.message.reply_to_message.delete()
                 await spell_check_del.delete()
 
 
