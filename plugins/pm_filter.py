@@ -843,15 +843,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="▣ ▢ ▢"
-        )
-        await query.message.edit_text(
-            text="▣ ▣ ▢"
-        )
-        await query.message.edit_text(
-            text="▣ ▣ ▣"
-        )      
+        
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -870,15 +862,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
         ]]
-        await query.message.edit_text(
-            text="▣ ▢ ▢"
-        )
-        await query.message.edit_text(
-            text="▣ ▣ ▢"
-        )
-        await query.message.edit_text(
-            text="▣ ▣ ▣"
-        )
+        
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
