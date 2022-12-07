@@ -1428,10 +1428,17 @@ async def advantage_spell_chok(client, msg):
         caption=(script.CUDNT_FND.format(RQST)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    await asyncio.sleep(50)
-    await spell_del.delete()
-    await asyncio.sleep(90)
-    await msg.message.delete()
+    try:
+        if settings['auto_delete']:
+            await asyncio.sleep(60)
+            await spell_check_del.delete()
+    except KeyError:
+            grpid = await active_connection(str(message.from_user.id))
+            await save_group_settings(grpid, 'auto_delete', True)
+            settings = await get_settings(message.chat.id)
+            if settings['auto_delete']:
+                await asyncio.sleep(60)
+                await spell_check_del.delete()
 
 
 async def manual_filters(client, message, text=False):
