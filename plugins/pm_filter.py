@@ -1366,6 +1366,7 @@ async def auto_filter(client, msg, spoll=False):
 
 
 async def advantage_spell_chok(client, msg):
+    masync def advantage_spell_chok(client, msg):
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
     reqstr = await client.get_users(reqstr1)
@@ -1382,7 +1383,6 @@ async def advantage_spell_chok(client, msg):
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply(script.I_CUDNT.format(RQST))
         await asyncio.sleep(8)
-        await msg.message.reply_to_message.delete()
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -1413,9 +1413,7 @@ async def advantage_spell_chok(client, msg):
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply(script.I_CUD_NT.format(RQST))
         await asyncio.sleep(8)
-        await msg.message.reply_to_message.delete()
         await k.delete()
-        await msg.delete()
         return
     SPELL_CHECK[msg.id] = movielist
     btn = [[
@@ -1430,19 +1428,10 @@ async def advantage_spell_chok(client, msg):
         caption=(script.CUDNT_FND.format(RQST)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    try:
-        if settings['auto_delete']:
-            await asyncio.sleep(60)
-            await msg.message.reply_to_message.delete()
-            await spell_check_del.delete()
-    except KeyError:
-            grpid = await active_connection(str(message.from_user.id))
-            await save_group_settings(grpid, 'auto_delete', True)
-            settings = await get_settings(message.chat.id)
-            if settings['auto_delete']:
-                await asyncio.sleep(60)
-                await msg.message.reply_to_message.delete()
-                await spell_check_del.delete()
+    await asyncio.sleep(50)
+    await spell_del.delete()
+    await asyncio.sleep(90)
+    await msg.message.delete()
 
 
 async def manual_filters(client, message, text=False):
