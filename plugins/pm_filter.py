@@ -1268,7 +1268,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hᴇʏ 👋🏻{message.from_user.mention},\n📫 Your Files is Ready Now 👇🏻</b>"
+        cap = f"<b>Hᴇʏ 👋🏻 {message.from_user.mention},\n📫 Yᴏᴜʀ Fɪʟᴇs ɪs Rᴇᴀᴅʏ Nᴏᴡ 👇🏻</b>"
 
     if imdb and imdb.get('poster'):
 
