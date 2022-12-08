@@ -1269,7 +1269,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"<b>Hᴇʏ 👋🏻  {message.from_user.mention},\n
-📫 Your Files is Ready Now 👇🏻"
+📫 Your Files is Ready Now 👇🏻</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
