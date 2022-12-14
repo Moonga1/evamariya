@@ -1419,6 +1419,7 @@ async def auto_filter(client, msg, spoll=False):
                 await asyncio.sleep(60)
                 await spell_check_del.delete()
 
+
      
 async def manual_filters(client, message, text=False):
     settings = await get_settings(message.chat.id)
