@@ -183,7 +183,7 @@ Nᴀᴍᴇ - {}</b>"""
 <b>➤{file_name}</b>
 
 <b>╭─────── • ◆ • ───────╮
-📮ᴊᴏɪɴ : <a href=https://t.me/CxMain>ᴄʜᴀɴɴᴇʟ</a>
+📮ᴊᴏɪɴ : <a href=https://t.me/CxMaxxx>ᴄʜᴀɴɴᴇʟ</a>
 🔖 ᴍᴏᴠɪᴇs : <a href=https://t.me/cinemaxpressTM>ɢʀᴏᴜᴘ</a>
 🖤 Dᴀʀᴋ Mᴏᴅᴇ : <a href=https://t.me/addtheme/MinimalWolf>Tᴏᴜᴄʜ</a>
 ╰─────── • ◆ • ───────╯
