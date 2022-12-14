@@ -48,7 +48,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CinemaxpressTM')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CxMain')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CxMaxxx')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'EvaSprt')
