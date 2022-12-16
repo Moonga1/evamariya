@@ -77,15 +77,15 @@ async def delete_gfilter(message, text, gfilters):
         await message.reply_text("Couldn't find that gfilter!", quote=True)
 async def del_allg(message, gfilters):
     if str(gfilters) not in mydb.list_collection_names():
-        await message.edit_text("Nothin!")
+        await message.edit_text("Nothing to Remove !")
         return
 
     mycol = mydb[str(gfilters)]
     try:
         mycol.drop()
-        await message.edit_text(f"All gfilters has been removed")
+        await message.edit_text(f"All gfilters has been removed !")
     except:
-        await message.edit_text("Couldn't remove all gfilters!")
+        await message.edit_text("Couldn't remove all gfilters !")
         return
 
 async def count_gfilters(gfilters):
