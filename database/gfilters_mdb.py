@@ -75,7 +75,7 @@ async def delete_gfilter(message, text, gfilters):
         )
     else:
         await message.reply_text("Couldn't find that gfilter!", quote=True)
-
+😹
 async def count_gfilters(gfilters):
     mycol = mydb[str(gfilters)]
 
