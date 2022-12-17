@@ -22,7 +22,6 @@ from database.filters_mdb import (
     del_all,
     find_filter,
     get_filters,
-    del_allg
 )
 from database.gfilters_mdb import (
     find_gfilter,
@@ -1365,14 +1364,14 @@ async def advantage_spell_chok(client, msg):
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
-  
+  RQST = query.strip()
     query = query.strip() + " movie"
     g_s = await search_gagala(query)
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply(script.I_CUDNT.format(mv_rqst))
+        k = await msg.reply(script.I_CUDNT.format(RQST))
         await asyncio.sleep(8)
         await msg.delete()
         await k.delete()
@@ -1403,7 +1402,7 @@ async def advantage_spell_chok(client, msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply(script.I_CUD_NT.format(mv_rqst))
+        k = await msg.reply(script.I_CUD_NT.format(RQST))
         await asyncio.sleep(8)
         await msg.delete()
         await k.delete()
@@ -1418,7 +1417,7 @@ async def advantage_spell_chok(client, msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
-        caption=(script.CUDNT_FND.format(mv_rqst)),
+        caption=(script.CUDNT_FND.format(RQST)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
     try:
