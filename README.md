@@ -2,6 +2,7 @@
 <p align="center">
   <img src="https://telegra.ph/file/0923d3e4f90a840bfb14a.jpg" alt="Cloned Repo Of DQ-The-File-Donor Logo">
 </p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h1 align="center">
   <b>DQ-The-File-Donor Bot</b>
 </h1>
