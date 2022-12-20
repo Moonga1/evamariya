@@ -179,7 +179,7 @@ Nᴀᴍᴇ - {}</b>"""
 
     CAPTION = """
 
-<b>✪ {file_name}</b>
+<b>{file_name}</b>
 
 <b>╭─────── • ◆ • ───────╮
 📮ᴊᴏɪɴ : <a href=https://t.me/CxMaxxx>ᴄʜᴀɴɴᴇʟ</a>
