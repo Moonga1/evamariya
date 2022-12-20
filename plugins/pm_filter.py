@@ -92,7 +92,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)} ▫️ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🎭{get_size(file.file_size)} 🔸 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -101,10 +101,10 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🎭{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}",
+                    text=f"🎭{get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -114,17 +114,17 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'📟 ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
                 
@@ -135,17 +135,17 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'📟 ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
@@ -157,16 +157,16 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🔺 ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
+            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton("♦️ ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("🔻 ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("🔻 ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("🔺 ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("🔻 ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     btn.insert(0, [
@@ -611,7 +611,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10 Mɪɴs' if settings["auto_delete"] else '✘ Oғғ',
+                    InlineKeyboardButton('1 Mɪɴs' if settings["auto_delete"] else '✘ Oғғ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
@@ -1139,7 +1139,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)} ◽️ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"🎭{get_size(file.file_size)} 🔸 {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1148,11 +1148,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{file.file_name}",
+                    text=f"🎭{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}",
+                    text=f"🎭{get_size(file.file_size)}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
             ]
@@ -1163,17 +1163,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'📟 ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
                 
@@ -1184,17 +1184,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ɪɴꜰᴏ 🔹', 'reqinfo'),
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'📟 ɪɴꜰᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔹 ᴍᴏᴠɪᴇ 🔹', 'minfo'),
-                    InlineKeyboardButton(f'🔹 ꜱᴇʀɪᴇꜱ 🔹', 'sinfo')
+                    InlineKeyboardButton(f'🕹 ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'🧨 ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
@@ -1207,7 +1207,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton("♦️ ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="🔻 ɴᴇxᴛ",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="🔻 ɴᴇxᴛ",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
