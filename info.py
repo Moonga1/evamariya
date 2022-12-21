@@ -22,7 +22,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 60))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 SHAZ = environ.get("SHAZ", "CAACAgUAAxkBAAEGqz1ji6SO-m8AAerpKIFZ7ZY0b2gh9mkAAiABAALIlGQUlQXJjT_X1UQrBA")
-PICS = (environ.get('PICS', 'https://telegra.ph/file/4915c38b5cbe1b55675ff.jpg https://telegra.ph/file/f579d9522b1fab28a1221.jpg https://telegra.ph/file/f5bba4d211002fab4b030.jpg https://telegra.ph/file/9ce9774a10fa771f8c2ce.jpg https://telegra.ph/file/d3346549c4f2745302c40.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/4915c38b5cbe1b55675ff.jpg https://telegra.ph/file/f579d9522b1fab28a1221.jpg https://telegra.ph/file/f5bba4d211002fab4b030.jpg https://telegra.ph/file/9ce9774a10fa771f8c2ce.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/d1cd30a05bbc9cdba71f4.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8739790963640620c85ac.jpg")
