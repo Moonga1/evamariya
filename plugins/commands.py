@@ -22,14 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ ᴄɪɴᴇᴍᴀxᴘʀᴇꜱꜱ', url=GRP_LNK),
-                ],[
-                    InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-                                    
+                    InlineKeyboardButton('ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ ᴄɪɴᴇᴍᴀxᴘʀᴇꜱꜱ', url=GRP_LNK),                                                    
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
